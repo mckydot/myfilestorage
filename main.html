@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File storage</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="./js/main.js"></script>
+</head>
+
+<body>
+  <div class="top">
+    <h1>
+      File storage
+    </h1>
+  </div>
+  <div class="top">
+    <input type="button" id="uppage" onclick="uppage()" class="uppage" value="Upload">
+  </div>
+  
+
+  <hr class="two_1">
+
+  <div class="container mt-3">
+
+  </div>
+  <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyB-OpVELJMOW24Bxwx1j6Bp5mm5yk4r9xs",
+      authDomain: "fileup-62f11.firebaseapp.com",
+      projectId: "fileup-62f11",
+      storageBucket: "fileup-62f11.appspot.com",
+      messagingSenderId: "850989383946",
+      appId: "1:850989383946:web:8b75f4539f537232bf7af3",
+      measurementId: "G-NT9J1N74J4"
+    };
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <script>
+    const db = firebase.firestore();
+    db.collection('product').get().then((result) => {
+      result.forEach((doc) => {
+        console.log(doc.data());
+        var temp = `
+        <div class="product">
+      <div class="flex-grow-1 p-4">
+        <h5 class="title">${doc.data().제목}</h5>
+        
+        <p class="price">${doc.data().과목} &nbsp; &nbsp; &nbsp; <a href="${doc.data().이미지}"><input type="button" class="file" value="File" id="file"></a></p>
+      </div>
+    </div>`;
+        $('.container').append(temp);
+
+        
+      })
+    })
+
+  </script>
+<a href=""></a>
+</body>
+
+</html>
+
+<!-- <p class="date">${doc.data().날짜}</p> 
+<a class="image" href="${doc.data().이미지}">File link</a>-->

@@ -1,0 +1,70 @@
+body{
+    background-color: rgb(41, 40, 40);
+}
+
+h1{
+    margin-top: 110px;
+    color: white;
+    font-size: 100px;
+}
+
+.inputpw {
+    margin-top: 20px;
+    width: 320px;
+    height: 40px;
+    font-size: 15px;
+    border: 0;
+    border-radius: 15px;
+    outline: none;
+    padding-left: 10px;
+    background-color: rgb(233, 233, 233);
+}
+.center{
+    margin-top: 30px;
+}
+.btn_log{
+    
+    background:#1AAB8A;
+    color:#fff;
+    border:none;
+    position:relative;
+    height:60px;
+    font-size:1.6em;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+}
+.btn_log:hover{
+    background:#fff;
+    color:#1AAB8A;
+}
+.btn_log:before,button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #1AAB8A;
+    transition:400ms ease all;
+}
+.btn_log:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+}
+.btn_log:hover:before,button:hover:after{
+    width:100%;
+    transition:800ms ease all;
+}
+
+.btn_delet{
+    width: 40px;
+    height:60px;
+    font-size:1.6em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+}

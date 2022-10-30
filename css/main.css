@@ -1,0 +1,54 @@
+h1{
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+.two_1{
+    width: 550px;
+    text-align: left;
+    margin-left: 5px;
+    border-bottom: 0px;
+}
+
+.container{
+    width : 500px;
+    background-color: #ffffff;
+    margin-top: 20px;
+    right: 50%;
+}
+.product{
+    border-radius: 10px;
+    height: 50px;
+    margin-top: 5px;
+    border: 1px solid rgb(72, 72, 72);
+}
+.title{
+    font-size:15px;
+    margin-left: 5px;
+    margin-top: 3px;
+    margin-bottom: 0;
+
+}
+.price{
+    font-size: 13px;
+    margin-left: 5px;
+    margin-top: 1px;
+}
+.uppage{
+    margin-top: 0px;
+    margin-left: 497px;
+    
+}
+a{
+    margin-top: 0;
+}
+.filedown{
+    width: 50px;  
+    height: 50px; 
+    border-radius: 10px;
+    
+    border: 1px solid rgb(72, 72, 72);
+}
+.file{
+    background-color: white;
+    color: black;
+}

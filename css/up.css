@@ -1,0 +1,37 @@
+body{
+  background-color: rgba(255, 255, 255, 0.603);
+}
+.uph{
+  margin-bottom: 0;
+  margin-top: 160px;
+  font-size: 60px;
+}
+.form-control1 {
+  margin-top: 40px;
+  width: 300px;
+  height: 50px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid black;
+}
+
+.form-control2 {
+  width: 300px;
+  height: 50px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid black;
+}
+
+.file_part{
+  margin-top: 30px;
+  width: 500px;
+}
+
+.form-control3{
+  width: 240px;
+  height: 100px;
+}
+
